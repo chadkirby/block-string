@@ -1,0 +1,8 @@
+node_modules
+.cache
+.DS_Store
+/.idea/
+/lib
+~\$*.docx
+trashme*
+/package
