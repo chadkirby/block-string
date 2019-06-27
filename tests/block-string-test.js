@@ -1,4 +1,4 @@
-let test = require('tape');
+let test = require('tape-promise/tape');
 
 let blockString = require('..');
 
@@ -10,7 +10,7 @@ test('blockString trims and removes leading indents', function(assert) {
       3
     4
   `,
-  `1\n2\n  3\n4`
+    `1\n2\n  3\n4`
   );
   assert.end();
 });
