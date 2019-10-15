@@ -20,9 +20,7 @@
     "tape-promise": "^4.0.0",
     "tom-jumbo-grumbo": "git+ssh://git@github.com/PatentNavigation/tom-jumbo-grumbo.git#v1.0.2"
   },
-  "dependencies": {
-    "lodash.sortby": "^4.7.0"
-  },
+  "dependencies": {},
   "scripts": {
     "test": "yarn lint && tape \"tests/*-test.js\"",
     "lint": "eslint ."

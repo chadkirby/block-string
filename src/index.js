@@ -1,4 +1,3 @@
-let sortBy = require('lodash.sortby');
 
 // makeTagProcessor is a helper function to roll your own tag processor function
 // eg, if you wanted to URI-encode substitution values in a template string,
@@ -41,7 +40,8 @@ function makeBlockTagProcessor(tagFn, postProcessor) {
       let indentation = joinedLiterals.match(/^ *(?=\S)|^ +$/gm); // match zero or more leading spaces in lines, but ignore completely empty lines
       if (indentation) {
         // get the shortest leading indent
-        indentation = new RegExp(`^${sortBy(indentation, 'length')[0]}`, 'gm');
+        let [ shortest ] = indentation.sort((a, b) => a.length - b.length);
+        indentation = new RegExp(`^${shortest}`, 'gm');
         // and replace that leading indent on each line
         // of both the raw and the parsed literals
         _literals = fixIndent(literals, indentation);
