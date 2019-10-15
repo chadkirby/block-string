@@ -1,6 +1,6 @@
 {
   "name": "block-string",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "block-string tag function",
   "main": "src/index.js",
   "repository": {
