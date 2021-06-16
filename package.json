@@ -12,6 +12,7 @@
   "bugs": {
     "url": "https://github.com/chadkirby/block-string/issues"
   },
+  "files": ["src"],
   "homepage": "https://github.com/chadkirby/block-string#readme",
   "devDependencies": {
     "eslint": "^6.0.0",
