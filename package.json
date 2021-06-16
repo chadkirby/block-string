@@ -1,6 +1,6 @@
 {
   "name": "block-string",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "block-string tag function",
   "main": "src/index.js",
   "repository": {
@@ -12,7 +12,9 @@
   "bugs": {
     "url": "https://github.com/chadkirby/block-string/issues"
   },
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "homepage": "https://github.com/chadkirby/block-string#readme",
   "devDependencies": {
     "eslint": "^6.0.0",
